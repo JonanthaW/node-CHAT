@@ -29,7 +29,6 @@ io.on("connection", socket => {
 		 mensagem_enviada = `[${date.format(now, "HH:mm:ss")}] ${socket.apelido}: ${mensagem_enviada}`;
 		io.sockets.emit("atualizar mensagem", mensagem_enviada);
 	})
-
 	socket.on("disconnect", () => {
 		let saiu_sucesso = `[${date.format(now, "HH:mm:ss")}] ${socket.apelido}`;
 		delete usuarios[socket.apelido];
@@ -37,7 +36,6 @@ io.on("connection", socket => {
 		io.sockets.emit("saiu chat", saiu_sucesso);
 	})
 })
-
 
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname+"/index.html"));
