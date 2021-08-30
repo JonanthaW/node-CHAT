@@ -16,4 +16,4 @@ Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e
 
 ### :bulb: Tela da aplicação
 
-![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example1.jpg);
+![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example1.jpg)
