@@ -1,0 +1,94 @@
+* {
+     font-family: Arial, Tahoma, sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 1.2vw;
+}
+body{
+    background:#302F31;
+    padding: 1vw;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+form{
+     margin:1vw 0;
+}
+form input[type='text']{
+     border: .2vw solid white;
+     border-radius: .5vw;
+     padding:5px;
+     width:75%;
+     outline: none;
+     padding-left: 1vw;
+}
+form input[type='submit']{
+     background: none;
+     border: .2vw solid white;
+     border-radius: 5px;
+     color:#FFF;
+     cursor:pointer;
+     font-weight: bold;
+     padding:.5vw;
+     width: 20%;
+}
+form input[type='submit']:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+#historico_mensagens{
+     background: #FFF;
+     border: .2vw solid white;
+     height: 550px;
+}
+
+#historico_mensagens p {
+  margin: 1vw .5vw;
+}
+#historico_mensagens h2, #historico_mensagens h3  {
+  margin: 1vw 10vw;
+  color: green;
+  font-size: 1.2vw;
+}
+#historico_mensagens h3 {
+  color: red !important;
+}
+
+#sala_chat{
+     display: none;
+}
+#acesso_usuario{
+     height:30px;
+     left:50%;
+     margin-left:-160px;
+     margin-top:-15px;
+     position: fixed;
+     top:50%;
+     width:320px;
+}
+#acesso_usuario form{
+     margin:0;
+}
+
+#historico_mensagens, #lista_usuarios{
+     background: #FFF;
+     border:2px solid #45C5BF;
+     height: 550px;
+     float:left;
+     margin-bottom: 10px;
+     width:75%;
+}
+...
+#historico_mensagens{
+     border-right: 0;
+}
+#lista_usuarios{
+border-left: 1px solid #45C5BF;
+     width: 20%;
+}
+#lista_usuarios option {
+  margin-left: 1%;
+}
