@@ -8,20 +8,16 @@ document.querySelector("#chat").addEventListener("submit", (e) => {
 
 socket.on("atualizar mensagem", mensagem => {
   let mensagem_formatada = document.createElement('p');
-
   mensagem_formatada.textContent = mensagem;
   document.querySelector("#historico_mensagens").append(mensagem_formatada);
 });
 
-
 document.querySelector("#login").addEventListener("submit", (watcher) => {
       watcher.preventDefault();
-
       socket.emit("entrar", document.querySelector("#apelido").value, valido => {
         if (valido) {
           document.querySelector("#acesso_usuario").style.display = "none";
           document.querySelector("#sala_chat").style.display = "block";
-
         }
         else {
           document.querySelector("#acesso_usuario").value = "";
@@ -33,7 +29,6 @@ document.querySelector("#login").addEventListener("submit", (watcher) => {
 socket.on("entrou chat", quem_logou => {
   let entries = ["acabou de se conectar!", "chegou no esqueminha!", "deu as caras de novo!", "veio cobrar o aluguel!"];
   let mensagem_join = document.createElement("h2");
-
   mensagem_join.textContent = `${quem_logou} ${entries[Math.floor(Math.random() * entries.length)]}`;
   document.querySelector("#historico_mensagens").appendChild(mensagem_join);
 })
