@@ -4,7 +4,6 @@ const path = require("path")
 const server = require("http").createServer(app);
 const port = 3000;
 const date = require("date-and-time");
-const now = new Date();
 const { Server } = require('socket.io');
 const io = new Server(server);
 var usuarios = [];
@@ -17,8 +16,9 @@ io.on("connection", socket => {
 			socket.apelido = apelido;
 			usuarios[apelido] = socket;
 			io.sockets.emit("atualizar usuarios", Object.keys(usuarios));
-			let entrou_sucesso = `[${date.format(now, "HH:mm:ss")}] ${socket.apelido}`;
+			let entrou_sucesso = `[${date.format(new Date(), "HH:mm:ss")}] ${socket.apelido}`;
 			io.sockets.emit("entrou chat", entrou_sucesso);
+			console.log(`[${date.format(new Date(), "HH:mm:ss")}] ${socket.apelido} entrou no chat!`);
 			callback(true);
 	  }
 		else {
@@ -26,11 +26,11 @@ io.on("connection", socket => {
 			}
 	})
 	socket.on("enviar mensagem", mensagem_enviada => {
-		 mensagem_enviada = `[${date.format(now, "HH:mm:ss")}] ${socket.apelido}: ${mensagem_enviada}`;
+		 mensagem_enviada = `[${date.format(new Date(), "HH:mm:ss")}] ${socket.apelido}: ${mensagem_enviada}`;
 		io.sockets.emit("atualizar mensagem", mensagem_enviada);
 	})
 	socket.on("disconnect", () => {
-		let saiu_sucesso = `[${date.format(now, "HH:mm:ss")}] ${socket.apelido}`;
+		let saiu_sucesso = `[${date.format(new Date(), "HH:mm:ss")}] ${socket.apelido}`;
 		delete usuarios[socket.apelido];
 		io.sockets.emit("atualizar usuarios", Object.keys(usuarios));
 		io.sockets.emit("saiu chat", saiu_sucesso);

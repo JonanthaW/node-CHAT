@@ -17,7 +17,7 @@ document.querySelector("#login").addEventListener("submit", (watcher) => {
       socket.emit("entrar", document.querySelector("#apelido").value, valido => {
         if (valido) {
           document.querySelector("#acesso_usuario").style.display = "none";
-          document.querySelector("#sala_chat").style.display = "block";
+          document.querySelector("#sala_chat").style.display = "flex";
         }
         else {
           document.querySelector("#acesso_usuario").value = "";

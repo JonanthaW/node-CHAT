@@ -1,5 +1,5 @@
 * {
-     font-family: Arial, Tahoma, sans-serif;
+     font-family: 'Do Hyeon', sans-serif;
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -7,88 +7,99 @@
 }
 body{
     background:#302F31;
-    padding: 1vw;
-    position: fixed;
-    width: 100vw;
     height: 100vh;
+    background-image: url("../assets/indexBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-form{
-     margin:1vw 0;
+#login {
+  display: flex;
+}
+
+form {
+   margin:1vw 0;
+   justify-self: center;
 }
 form input[type='text']{
-     border: .2vw solid white;
-     border-radius: .5vw;
-     padding:5px;
-     width:75%;
-     outline: none;
-     padding-left: 1vw;
+    border: none;
+    padding: 5px;
+    border-bottom: .2vw solid black;
+    background-color: inherit;
+    font-size: 1.2vw;
+    color: black;
+    margin-right: 2vw;
+    outline: none;
 }
+
 form input[type='submit']{
      background: none;
-     border: .2vw solid white;
+     border: .2vw solid #0B0A0A;
      border-radius: 5px;
-     color:#FFF;
+     color:#0B0A0A;
      cursor:pointer;
      font-weight: bold;
      padding:.5vw;
-     width: 20%;
+     transition-duration: .3s;
 }
 form input[type='submit']:hover {
-  background-color: white;
-  color: black;
-  border-color: white;
+  background-color: black;
+  color: white;
+  border-color: black;
 }
 #historico_mensagens{
      background: #FFF;
-     border: .2vw solid white;
-     height: 550px;
+     height: 90vh;
 }
 
 #historico_mensagens p {
   margin: 1vw .5vw;
 }
+
 #historico_mensagens h2, #historico_mensagens h3  {
   margin: 1vw 10vw;
   color: green;
   font-size: 1.2vw;
 }
+
 #historico_mensagens h3 {
   color: red !important;
 }
 
 #sala_chat{
-     display: none;
+   display: none;
+   height: 100vh;
 }
+
+#sala_chat select {
+  background-color: #11121e;
+  direction: rtl;
+  text-align: center;
+  scrollbar-width: none;
+}
+
+#lista_usuarios{
+  width: 20%;
+}
+#lista_usuarios option {
+  color: white;
+}
+
 #acesso_usuario{
-     height:30px;
-     left:50%;
-     margin-left:-160px;
-     margin-top:-15px;
-     position: fixed;
-     top:50%;
-     width:320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 #acesso_usuario form{
      margin:0;
 }
 
-#historico_mensagens, #lista_usuarios{
-     background: #FFF;
-     border:2px solid #45C5BF;
-     height: 550px;
-     float:left;
-     margin-bottom: 10px;
-     width:75%;
-}
-...
-#historico_mensagens{
-     border-right: 0;
-}
-#lista_usuarios{
-border-left: 1px solid #45C5BF;
-     width: 20%;
-}
-#lista_usuarios option {
-  margin-left: 1%;
+.mensagem_container {
+  background-color: #fff;
+  display: grid;
+  width: 100vw;
+  overflow: auto;
+  word-break: break-all;
+  word-wrap: break-word;
 }

@@ -3,21 +3,26 @@
 <head>
      <title>ChatJS - Aplicação em NODE</title>
      <link rel="stylesheet" href="/style.css" />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
       <div id='acesso_usuario'>
       <form id="login">
           <input type='text' placeholder='Insira seu apelido' name='apelido' id='apelido' />
-          <input type='submit' value='Entrar' />
+          <input id='apelido_enviar' type='submit' value='Entrar' />
       </form>
     </div>
     <div id='sala_chat'>
-      <div id="historico_mensagens"></div>
-      <select multiple="multiple" id='lista_usuarios'><option value=''>Todos</option></select>
-      <form id="chat">
-          <input type='text' id='texto_mensagem' name='texto_mensagem' />
-          <input type='submit' value='Enviar mensagem!' />
-      </form>
+      <select multiple="multiple" id='lista_usuarios'><option value=''></option></select>
+      <div class="mensagem_container">
+        <div id="historico_mensagens">
+        </div>
+        <form id="chat">
+            <input type='text' id='texto_mensagem' name='texto_mensagem' />
+            <input type='submit' value='Enviar mensagem!' />
+        </form>
+        </div>
     </div>
 
      <script src="/socket.io/socket.io.js"></script>
