@@ -18,3 +18,9 @@ Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e
 
 ![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example1.jpg)
 ![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example2.jpg)
+
+### :computer: Baixando o conteúdo:
+
+```bash
+$ git clone https://github.com/JonanthaW/Arduino-Projects.git
+```
