@@ -4,7 +4,7 @@
 
 ## :rocket: Sobre a página
 
-Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e as salas de bate-papo dos antigos provedores de internet.
+Aplicativo de sala de chat simples semelhante ao antigo e popular serviço do MIRC e as salas de bate-papo dos antigos provedores de internet.
 
 #### :wrench: Techs utilizadas:
 * _HTML_
