@@ -14,7 +14,6 @@ Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e
   * _EXPRESS_
   * _SOCKET.IO_
   * _DATE-AND-TIME_
-  * _SOCKET.IO_
 * NPM
   
 ### :computer: Como rodar o servidor:
