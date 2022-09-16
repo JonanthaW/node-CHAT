@@ -4,7 +4,7 @@
 
 ## :rocket: Sobre a página
 
-Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e as salas de bate-papo dos antigos provedores de internet.
+Aplicativo de sala de chat simples semelhante ao antigo e popular serviço do MIRC e as salas de bate-papo dos antigos provedores de internet.
 
 #### :wrench: Techs utilizadas:
 * _HTML_
@@ -13,6 +13,25 @@ Aplicativo de sala de chat simples, igual ao antigo e popular serviço do MIRC e
 * _NODEJS_
   * _EXPRESS_
   * _SOCKET.IO_
+  * _DATE-AND-TIME_
+* NPM
+  
+### :computer: Como rodar o servidor:
+
+<p>Baixe os requisitos:</p>
+
+```bash
+$ git clone https://github.com/JonanthaW/node-CHAT.git
+npm install express
+npm install date-and-time
+npm install socket.io
+```
+
+<p>Inicie:</p>
+
+```bash
+node app.js
+```
 
 ### :bulb: Tela da aplicação
 
