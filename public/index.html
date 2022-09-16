@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>ChatJS - Aplicação em NODE</title>
-     <link rel="stylesheet" href="/style.css" />
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+      <title>Chat Secreto - Shhhhh</title>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+      <meta content="utf-8" http-equiv="encoding">
+      <meta name="viewport" content="width=device.width, initial-scale=1.0">
+      <meta name="title" content="Chat Secreto - Shhhhh">
+      <meta name="description" content="O que acontece aqui, morre aqui.">
+      <link rel="icon" href="../assets/images/shhh.png" type="image/x-icon">
+      <meta property="twitter:image" content="https://www.radioitaengafm.com.br/img/logo.png">
+      <link rel="stylesheet" href="assets/css/master.css" />
+      <link rel="stylesheet" href="assets/css/login.css" />
+      <link href="assets/fonts/Fontawesome/css/all.css" rel="stylesheet">
+
 </head>
 <body>
-      <div id='acesso_usuario'>
-      <form id="login">
-          <input type='text' placeholder='Insira seu apelido' name='apelido' id='apelido' />
-          <input id='apelido_enviar' type='submit' value='Entrar' />
-      </form>
+    <div id='acesso_usuario'>
+        <div id="logo">
+           <img id="imageLogin" src="../assets/images/shhh.png" />
+            <h2>Chat Secreto</h2>
+            <h3>O que acontece aqui, morre aqui</h3>
+        </div>
+        <form id="login">
+          <div>
+            <i id="icone_login" class="fas fa-compass"></i>
+            <input type='text' placeholder='Insira seu nome' name='apelido' id='apelido' />
+          </div>
+            <input id='apelido_enviar' type='submit' value='Entrar' />
+        </form>
     </div>
+
     <div id='sala_chat'>
       <select multiple="multiple" id='lista_usuarios'><option value=''></option></select>
       <div class="mensagem_container">

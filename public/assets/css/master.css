@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url(assets/fonts/Doppio_One/DoppioOne-Regular.ttf);
+}
+
+* {
+    font-family: 'Doppio One', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+    background:#302F31;
+    height: 100vh;
+    width: 100vw;
+}
+  

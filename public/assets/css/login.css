@@ -1,0 +1,124 @@
+#acesso_usuario, #logo {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.png);
+    background-size: cover;
+}
+
+#logo {
+    margin-bottom:  10vh;
+    height: initial;
+    background: none !important;
+}
+
+    #imageLogin {
+        width: 50vw;
+        margin-bottom: 1vh;
+    }
+
+    #logo h2 {
+        font-size: 8vw;
+        color: white;
+    }
+
+    #logo h3 {
+        font-size: 3.5vw;
+        color: #eeec5f;
+        text-align: center;
+    }
+
+#login {
+    display: flex;
+    flex-direction: column;
+    gap:  2vh;
+}
+
+    #login div {
+        display: flex;
+        align-items: center;
+    }
+
+    #icone_login {
+        position: absolute;
+        padding-left: 15px;
+        color: white;
+        font-size: 7vw;
+    }
+
+    #apelido {
+        color: white;
+        font-weight: bold;
+        background-color: #ccad384a;
+        outline: none;
+        font-size: 5vw;
+        padding: 1vh 9vw;
+    }
+
+    ::placeholder {
+        color:  white;
+    }
+
+    #apelido_enviar {
+        font-size: 6vw;
+        padding: 0.5vh 0vw;
+        color: #a45516;
+    }
+
+    #apelido, #apelido_enviar {
+        border-radius: 5vh;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+    }
+
+
+#sala_chat {
+    display: none;
+}
+
+
+@media (orientation: landscape) {
+
+    #acesso_usuario {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4vw;
+    }
+
+    #imageLogin {
+        width: 19vw;
+    }
+
+    #logo h2 {
+        font-size: 3vw;
+    }
+
+    #logo h3 {
+        font-size: 1.5vw;
+    }
+
+    #login {
+        gap:  4vh;
+    }
+
+    #icone_login {
+        font-size:  3vw;
+        padding-left: 15px;
+    }
+
+    #apelido {
+        font-size: 3vw;
+        margin: 1vh 1vw;
+        padding: 1vh 5vw;
+    }
+
+    #apelido_enviar {
+        font-size: 3vw;
+        padding: 1vh 0vw;
+    }
+
+}
