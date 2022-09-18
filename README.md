@@ -35,8 +35,7 @@ node app.js
 
 ### :bulb: Tela da aplicação
 
-![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example1.jpg)
-![image](https://github.com/JonanthaW/node-CHAT/blob/main/public/assets/example2.jpg)
+[Em breve]
 
 ### :computer: Baixando o conteúdo:
 
